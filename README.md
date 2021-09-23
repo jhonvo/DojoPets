@@ -9,5 +9,7 @@ Implement walk(), feed(), bathe() on the ninja class.<br>
 Implement sleep(), eat(), play(), noise() methods on the pet class.<br>
 Make an instance of a Ninja and assign them an instance of a pet to the pet attribute.<br>
 Have the Ninja feed, walk , and bathe their pet.<br>
+NINJA BONUS: Use modules to separate out the classes into different files.<br>
 Pending:<br>
-NINJA BONUS: Use modules to separate out the classes into different files.  
+SENSEI BONUS: Use Inheritance to create sub classes of pets.
+

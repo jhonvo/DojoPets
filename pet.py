@@ -8,7 +8,7 @@ class Pet:
         self.tricks = tricks
         self.energy = 0
         self.health = 0
-        Pet.pet_list.append(self)
+        Pet.pet_list.append(self) #Adding this to the pet_list list above.
 
     def sleep (self): # increases the pets energy by 25
         self.energy += 25

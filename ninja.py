@@ -1,4 +1,4 @@
-from pet import Pet
+from pet import Pet #Calling Pet as it is hosting some of the methods required.
 
 class Ninja:
 
@@ -9,12 +9,12 @@ class Ninja:
         self.last_name = last_name
         self.treats = 3
         self.pet_food = 3
-        self.pet = Pet(name , type , tricks)
-        Ninja.AllNinjas.append(self)
+        self.pet = Pet(name , type , tricks) #Creating a Pet instance from Ninja class
+        Ninja.AllNinjas.append(self) #Adding this to the AllNinjas list above.
 
     def walk (self): # walks the ninja's pet invoking the pet play() method
         print (f'Walking {self.pet.name}')
-        Pet.play
+        self.pet.play() #Calling a method on the Pet class
         return self
 
     def feed (self, food): # feeds the ninja's pet invoking the pet eat() method
@@ -22,21 +22,21 @@ class Ninja:
             if self.treats > 0:
                 print (f'Feeding {food} to {self.pet.name}!')
                 self.treats -= 1
-                self.pet.eat()
+                self.pet.eat() #Calling a method on the Pet class
             else:
                 print (f"Oh, you do not have enough treats")
         elif food != 'treats':
             if self.pet_food > 0:
                 print (f'Feeding {food} to {self.pet.name}!')
-                self.pet_food -= 1
-                self.pet.eat()
+                self.pet_food -= 1 
+                self.pet.eat() #Calling a method on the Pet class
             else:
                 print (f"Oh, you do not have enough food")
         return self
 
     def bathe (self): # cleans the ninja's pet invoking the pet noise() method
         print(f'Bathing {self.pet.name}')
-        self.pet.noise()
+        self.pet.noise() #Calling a method on the Pet class
         return self
 
     def NinjaDetails (self):
